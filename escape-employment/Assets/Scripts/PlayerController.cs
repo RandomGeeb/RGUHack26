@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 
     private NavMeshAgent _agent;
     private Camera _cam;
+    private bool _isActive = true;
 
     private void Awake()
     {
@@ -21,8 +22,15 @@ public class PlayerController : MonoBehaviour
 
     private void Start() => _cam = Camera.main;
 
+    public void SetActive(bool active)
+    {
+        _isActive = active;
+        if (!active) _agent.ResetPath();
+    }
+
     private void Update()
     {
+        if (!_isActive) return;
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = _cam.ScreenPointToRay(Input.mousePosition);
