@@ -38,6 +38,12 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
+    private void Update()
+    {
+        if (_gameOver && Input.GetKeyDown(KeyCode.R))
+            Restart();
+    }
+
     public void Restart()
     {
         Time.timeScale = 1f;
