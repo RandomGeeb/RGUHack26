@@ -16,6 +16,8 @@ MonoBehaviour:
   description: 
   icon: {fileID: 0}
   count: 0
+  isKey: 1
+  maxCarry: 99
   type: 2
   distractionDuration: 0
   throwDistance: 0
