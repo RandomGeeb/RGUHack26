@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public enum ItemType { Noise, Decoy }
+public enum ItemType { Noise, Decoy, Key }
 
 [CreateAssetMenu(fileName = "NewItem", menuName = "Stealth/Item")]
 public class ItemData : ScriptableObject
