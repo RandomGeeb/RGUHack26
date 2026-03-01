@@ -136,4 +136,17 @@ public class ItemManager : MonoBehaviour
             return ray.GetPoint(dist);
         return Vector3.zero;
     }
+
+    public void AddItem(int itemIndex, int amount)
+    {
+        if (itemIndex < 0 || itemIndex >= items.Count) return;
+
+        _counts[_activePlayer][itemIndex] += amount;
+
+        if (_menuOpen)
+            UI.UpdateSelection(_selectedIndex);
+
+        Debug.Log($"Added {amount} of {items[itemIndex].itemName}");
+    }
+
 }
