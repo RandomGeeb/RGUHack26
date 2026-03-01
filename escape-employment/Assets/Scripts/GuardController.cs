@@ -4,7 +4,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class GuardController : MonoBehaviour
 {
-    public enum GuardState { Patrol, Alert, Distracted, Lured }
+    public enum GuardState { Patrol, Alert, Distracted, Lured, Frozen }
 
     [Header("Patrol")]
     [SerializeField] private Transform[] waypoints;
@@ -37,6 +37,10 @@ public class GuardController : MonoBehaviour
     private float _luredDuration = 0f;
     private float _luredTimer = 0f;
 
+    // Frozen
+    private float _frozenTimer = 0f;
+    private float _frozenDuration = 0f;
+
     private static readonly int SpeedHash = Animator.StringToHash("Speed");
 
     private void Awake()
@@ -67,6 +71,7 @@ public class GuardController : MonoBehaviour
         if (_state == GuardState.Patrol) UpdatePatrol();
         if (_state == GuardState.Distracted) UpdateDistracted();
         if (_state == GuardState.Lured) UpdateLured();
+        if (_state == GuardState.Frozen) UpdateFrozen();
 
         if (_animator != null)
             _animator.SetFloat(SpeedHash, _agent.desiredVelocity.magnitude);
@@ -94,9 +99,10 @@ public class GuardController : MonoBehaviour
 
         Material mat = newState switch
         {
-            GuardState.Alert                  => alertMaterial,
-            GuardState.Distracted or GuardState.Lured => distractedMaterial != null ? distractedMaterial : patrolMaterial,
-            _                                 => patrolMaterial,
+            GuardState.Alert                                    => alertMaterial,
+            GuardState.Distracted or GuardState.Lured
+                                  or GuardState.Frozen         => distractedMaterial != null ? distractedMaterial : patrolMaterial,
+            _                                                   => patrolMaterial,
         };
         if (mat != null) bodyRenderer.material = mat;
 
@@ -129,6 +135,27 @@ public class GuardController : MonoBehaviour
         if (_distractionTimer >= _distractionDuration)
         {
             _agent.speed = patrolSpeed;
+            SetState(GuardState.Patrol);
+            GoToNextWaypoint();
+        }
+    }
+
+    /// <summary>Stops the guard in place for a duration then resumes patrol.</summary>
+    public void Freeze(float duration)
+    {
+        if (_state == GuardState.Alert) return;
+        _frozenDuration = duration;
+        _frozenTimer = 0f;
+        _agent.ResetPath();
+        SetState(GuardState.Frozen);
+        Debug.Log($"[GuardController] {name} frozen for {duration}s.");
+    }
+
+    private void UpdateFrozen()
+    {
+        _frozenTimer += Time.deltaTime;
+        if (_frozenTimer >= _frozenDuration)
+        {
             SetState(GuardState.Patrol);
             GoToNextWaypoint();
         }
