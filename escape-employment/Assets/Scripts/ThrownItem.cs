@@ -4,6 +4,7 @@ using UnityEngine;
 public class ThrownItem : MonoBehaviour
 {
     [SerializeField] private float notifyRadius = 20f;
+    private int _roomId;
 
     private void Awake()
     {
@@ -20,6 +21,9 @@ public class ThrownItem : MonoBehaviour
         // Force a visible scale
         transform.localScale = Vector3.one * 0.5f;
 
+        // Put on IgnoreRaycast layer so the floor detection raycast doesn't hit this object
+        gameObject.layer = 2;
+
         // If there is a Rigidbody, make it kinematic so physics doesn't pull it through the floor
         Rigidbody rb = GetComponent<Rigidbody>();
         if (rb != null) rb.isKinematic = true;
@@ -28,9 +32,10 @@ public class ThrownItem : MonoBehaviour
     /// <summary>Call immediately after Instantiate. Starts the throw animation.</summary>
     /// <param name="duration">How long the distraction lasts after landing.</param>
     /// <param name="fromPos">World position of the throwing player.</param>
-    public void Init(float duration, Vector3 fromPos)
+    public void Init(float duration, Vector3 fromPos, int roomId = 0)
     {
-        Debug.Log($"[ThrownItem] Init — throwing from {fromPos} to {transform.position}");
+        _roomId = roomId;
+        Debug.Log($"[ThrownItem] Init — throwing from {fromPos} to {transform.position} (room {roomId})");
         StartCoroutine(ThrowRoutine(duration, fromPos));
     }
 
@@ -58,10 +63,17 @@ public class ThrownItem : MonoBehaviour
 
         // Search every GuardController in the scene — no Collider needed
         GuardController[] guards = (GuardController[])Object.FindObjectsOfType(typeof(GuardController));
-        Debug.Log($"[ThrownItem] Found {guards.Length} guard(s) in scene.");
+        Debug.Log($"[ThrownItem] Found {guards.Length} guard(s). Room filter: {_roomId}");
 
         foreach (GuardController guard in guards)
         {
+            // Skip guards assigned to a different room
+            if (guard.RoomId != _roomId)
+            {
+                Debug.Log($"[ThrownItem] Guard '{guard.name}' is in room {guard.RoomId} — ignoring (item in room {_roomId}).");
+                continue;
+            }
+
             float dist = Vector3.Distance(landPos, guard.transform.position);
             Debug.Log($"[ThrownItem] Guard '{guard.name}' is {dist:F1}m away (radius={notifyRadius}m).");
             if (dist <= notifyRadius)
@@ -71,4 +83,5 @@ public class ThrownItem : MonoBehaviour
         yield return new WaitForSeconds(duration);
         Destroy(gameObject);
     }
+
 }
