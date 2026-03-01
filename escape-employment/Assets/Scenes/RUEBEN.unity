@@ -562,6 +562,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2750404512937251891, guid: 40bcb035c364d4b43a5976a35c7fa660, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     - target: {fileID: 6028681964923378670, guid: 40bcb035c364d4b43a5976a35c7fa660, type: 3}
       propertyPath: m_Name
       value: modern_chair (3)
@@ -1274,6 +1278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: office_chair (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2545738250604737303, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     - target: {fileID: 7652783248613399332, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.198359
@@ -1314,6 +1322,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8192958739743607764, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3010,6 +3022,10 @@ PrefabInstance:
       propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3760260057011339283, guid: db25d2b389bb0f8478e7e515c8f76426, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5196,6 +5212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: office_chair (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2545738250604737303, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     - target: {fileID: 7652783248613399332, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.89
@@ -5236,6 +5256,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8192958739743607764, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5476,6 +5500,10 @@ PrefabInstance:
       propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3760260057011339283, guid: db25d2b389bb0f8478e7e515c8f76426, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7883,6 +7911,10 @@ PrefabInstance:
       propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3760260057011339283, guid: db25d2b389bb0f8478e7e515c8f76426, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8627,6 +8659,10 @@ PrefabInstance:
       propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3760260057011339283, guid: db25d2b389bb0f8478e7e515c8f76426, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10937,6 +10973,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2750404512937251891, guid: 40bcb035c364d4b43a5976a35c7fa660, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     - target: {fileID: 6028681964923378670, guid: 40bcb035c364d4b43a5976a35c7fa660, type: 3}
       propertyPath: m_Name
       value: modern_chair (1)
@@ -11916,6 +11956,10 @@ PrefabInstance:
       propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3760260057011339283, guid: db25d2b389bb0f8478e7e515c8f76426, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12213,6 +12257,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7709971870301297460, guid: ecc14f0acfe79f9438b09817f25f3745, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9fe5e72a0fbe6914e83eac7c9af908b3, type: 2}
     - target: {fileID: 8903516023095244506, guid: ecc14f0acfe79f9438b09817f25f3745, type: 3}
       propertyPath: m_Name
       value: small_trash_bin (5)
@@ -13316,6 +13364,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2750404512937251891, guid: 40bcb035c364d4b43a5976a35c7fa660, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     - target: {fileID: 6028681964923378670, guid: 40bcb035c364d4b43a5976a35c7fa660, type: 3}
       propertyPath: m_Name
       value: modern_chair
@@ -15224,6 +15276,10 @@ PrefabInstance:
       propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3760260057011339283, guid: db25d2b389bb0f8478e7e515c8f76426, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15712,6 +15768,10 @@ PrefabInstance:
       propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3760260057011339283, guid: db25d2b389bb0f8478e7e515c8f76426, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17790,6 +17850,10 @@ PrefabInstance:
       propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3760260057011339283, guid: db25d2b389bb0f8478e7e515c8f76426, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18625,6 +18689,10 @@ PrefabInstance:
       propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3760260057011339283, guid: db25d2b389bb0f8478e7e515c8f76426, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18642,6 +18710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: office_chair (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2545738250604737303, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     - target: {fileID: 7652783248613399332, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.71836
@@ -18682,6 +18754,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8192958739743607764, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21155,6 +21231,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: office_chair (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2545738250604737303, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     - target: {fileID: 7652783248613399332, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.78
@@ -21195,6 +21275,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8192958739743607764, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21622,6 +21706,10 @@ PrefabInstance:
       propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3760260057011339283, guid: db25d2b389bb0f8478e7e515c8f76426, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22066,6 +22154,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: office_chair (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2545738250604737303, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     - target: {fileID: 7652783248613399332, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.86
@@ -22106,6 +22198,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8192958739743607764, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22627,6 +22723,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: office_chair (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2545738250604737303, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     - target: {fileID: 7652783248613399332, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.16836
@@ -22667,6 +22767,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8192958739743607764, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24108,6 +24212,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 131623098255990756, guid: 9be99ee0c2686ef44bf420ce960b6598, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e059f45f400e21f409d6660946a58318, type: 2}
     - target: {fileID: 4690945123608310858, guid: 9be99ee0c2686ef44bf420ce960b6598, type: 3}
       propertyPath: m_Name
       value: wall_medium (81)
@@ -24958,6 +25066,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: office_chair (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2545738250604737303, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     - target: {fileID: 7652783248613399332, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.08836
@@ -24998,6 +25110,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8192958739743607764, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27424,6 +27540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: office_chair
       objectReference: {fileID: 0}
+    - target: {fileID: 2545738250604737303, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     - target: {fileID: 7652783248613399332, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.16836
@@ -27464,6 +27584,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8192958739743607764, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27648,6 +27772,10 @@ PrefabInstance:
       propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3760260057011339283, guid: db25d2b389bb0f8478e7e515c8f76426, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30562,6 +30690,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2750404512937251891, guid: 40bcb035c364d4b43a5976a35c7fa660, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     - target: {fileID: 6028681964923378670, guid: 40bcb035c364d4b43a5976a35c7fa660, type: 3}
       propertyPath: m_Name
       value: modern_chair (4)
@@ -31338,7 +31470,7 @@ Transform:
   m_GameObject: {fileID: 1820377759}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.2, y: -0, z: 19.37}
+  m_LocalPosition: {x: 13.2, y: -0, z: 19.45}
   m_LocalScale: {x: 1.0355822, y: 1, z: 0.99494964}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31413,6 +31545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: office_chair (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2545738250604737303, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     - target: {fileID: 7652783248613399332, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.86
@@ -31453,6 +31589,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8192958739743607764, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32879,6 +33019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: office_chair (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2545738250604737303, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     - target: {fileID: 7652783248613399332, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.410002
@@ -32919,6 +33063,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8192958739743607764, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33499,6 +33647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: office_chair (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2545738250604737303, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     - target: {fileID: 7652783248613399332, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.82836
@@ -33539,6 +33691,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8192958739743607764, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34334,6 +34490,10 @@ PrefabInstance:
       propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3760260057011339283, guid: db25d2b389bb0f8478e7e515c8f76426, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34766,6 +34926,10 @@ PrefabInstance:
       propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3760260057011339283, guid: db25d2b389bb0f8478e7e515c8f76426, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34962,6 +35126,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: office_chair (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2545738250604737303, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     - target: {fileID: 7652783248613399332, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.52
@@ -35002,6 +35170,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8192958739743607764, guid: eac496dabf87c6e4098dd8cfa5f37ccc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36359,6 +36531,10 @@ PrefabInstance:
       propertyPath: m_RenderingLayerMask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3760260057011339283, guid: db25d2b389bb0f8478e7e515c8f76426, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6889f44cfcf0ad14ca17925b3d51f15c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
