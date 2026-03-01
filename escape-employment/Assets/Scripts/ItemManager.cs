@@ -141,12 +141,26 @@ public class ItemManager : MonoBehaviour
     {
         if (itemIndex < 0 || itemIndex >= items.Count) return;
 
-        _counts[_activePlayer][itemIndex] += amount;
+        ItemData item = items[itemIndex];
+        int current = _counts[_activePlayer][itemIndex];
+
+        // Enforce per-player max carry
+        if (current >= item.maxCarry)
+        {
+            Debug.Log($"Player {_activePlayer} already has the maximum of {item.itemName} ({item.maxCarry}).");
+            return;
+        }
+
+        int newAmount = Mathf.Min(current + amount, item.maxCarry);
+        _counts[_activePlayer][itemIndex] = newAmount;
 
         if (_menuOpen)
             UI.UpdateSelection(_selectedIndex);
 
-        Debug.Log($"Added {amount} of {items[itemIndex].itemName}");
+        Debug.Log($"Player {_activePlayer} now has {newAmount} of {item.itemName}");
     }
+
+
+
 
 }

@@ -9,6 +9,8 @@ public class ItemData : ScriptableObject
     [TextArea] public string description;
     public Sprite icon;
     public int count = 3;
+    public bool isKey;
+    public int maxCarry = 99;   // default for normal items
     public ItemType type;
     public float distractionDuration = 5f;
     public float throwDistance = 8f;
