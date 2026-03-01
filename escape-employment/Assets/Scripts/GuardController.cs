@@ -4,7 +4,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class GuardController : MonoBehaviour
 {
-    public enum GuardState { Patrol, Alert, Distracted }
+    public enum GuardState { Patrol, Alert, Distracted, Lured }
 
     [Header("Patrol")]
     [SerializeField] private Transform[] waypoints;
@@ -30,6 +30,12 @@ public class GuardController : MonoBehaviour
     private float _waitTimer = 0f;
     private float _distractionTimer = 0f;
     private float _distractionDuration = 0f;
+
+    // Lured path
+    private Vector3[] _luredPath;
+    private int _luredPathIndex = 0;
+    private float _luredDuration = 0f;
+    private float _luredTimer = 0f;
 
     private static readonly int SpeedHash = Animator.StringToHash("Speed");
 
@@ -60,6 +66,7 @@ public class GuardController : MonoBehaviour
     {
         if (_state == GuardState.Patrol) UpdatePatrol();
         if (_state == GuardState.Distracted) UpdateDistracted();
+        if (_state == GuardState.Lured) UpdateLured();
 
         if (_animator != null)
             _animator.SetFloat(SpeedHash, _agent.desiredVelocity.magnitude);
@@ -87,9 +94,9 @@ public class GuardController : MonoBehaviour
 
         Material mat = newState switch
         {
-            GuardState.Alert      => alertMaterial,
-            GuardState.Distracted => distractedMaterial != null ? distractedMaterial : patrolMaterial,
-            _                     => patrolMaterial,
+            GuardState.Alert                  => alertMaterial,
+            GuardState.Distracted or GuardState.Lured => distractedMaterial != null ? distractedMaterial : patrolMaterial,
+            _                                 => patrolMaterial,
         };
         if (mat != null) bodyRenderer.material = mat;
 
@@ -124,6 +131,47 @@ public class GuardController : MonoBehaviour
             _agent.speed = patrolSpeed;
             SetState(GuardState.Patrol);
             GoToNextWaypoint();
+        }
+    }
+
+    /// <summary>Leads the guard through a specific path then lingers at the final point.</summary>
+    public void FollowPath(Vector3[] path, float duration)
+    {
+        if (_state == GuardState.Alert || path == null || path.Length == 0) return;
+
+        _luredPath = path;
+        _luredPathIndex = 0;
+        _luredDuration = duration;
+        _luredTimer = 0f;
+
+        _agent.speed = patrolSpeed * 1.5f;
+        _agent.SetDestination(_luredPath[0]);
+        SetState(GuardState.Lured);
+        Debug.Log($"[GuardController] {name} lured — following {path.Length}-point path.");
+    }
+
+    private void UpdateLured()
+    {
+        if (_agent.pathPending) return;
+
+        // Advance through path waypoints
+        if (_agent.remainingDistance <= _agent.stoppingDistance)
+        {
+            _luredPathIndex++;
+            if (_luredPathIndex < _luredPath.Length)
+            {
+                _agent.SetDestination(_luredPath[_luredPathIndex]);
+                return;
+            }
+
+            // Reached final point — linger then resume patrol
+            _luredTimer += Time.deltaTime;
+            if (_luredTimer >= _luredDuration)
+            {
+                _agent.speed = patrolSpeed;
+                SetState(GuardState.Patrol);
+                GoToNextWaypoint();
+            }
         }
     }
 

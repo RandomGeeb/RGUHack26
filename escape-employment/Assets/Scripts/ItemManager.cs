@@ -44,6 +44,14 @@ public class ItemManager : MonoBehaviour
         if (_menuOpen) UI.UpdateSelection(_selectedIndex);
     }
 
+    /// <summary>Returns a specific player's remaining count for an item slot.</summary>
+    public int GetCountForPlayer(int playerIndex, int itemIndex)
+    {
+        if (_counts == null || playerIndex >= _counts.Length
+            || itemIndex < 0 || itemIndex >= _counts[playerIndex].Count) return 0;
+        return _counts[playerIndex][itemIndex];
+    }
+
     /// <summary>Returns the active player's remaining count for an item slot.</summary>
     public int GetCount(int itemIndex)
     {

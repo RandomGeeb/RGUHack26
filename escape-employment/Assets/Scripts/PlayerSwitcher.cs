@@ -4,6 +4,7 @@ public class PlayerSwitcher : MonoBehaviour
 {
     public static PlayerSwitcher Instance { get; private set; }
     public PlayerController ActivePlayer => players[_currentIndex];
+    public GameObject[] Players => System.Array.ConvertAll(players, p => p.gameObject);
 
     [SerializeField] private PlayerController[] players;
     [SerializeField] private Transform[] roomPlanes;
