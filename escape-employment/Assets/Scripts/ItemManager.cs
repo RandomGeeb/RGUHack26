@@ -124,7 +124,7 @@ public class ItemManager : MonoBehaviour
         }
 
         Debug.Log($"[ItemManager] Throwing '{item.itemName}' to {throwPos}, player at {player.position}");
-        thrown.Init(item.distractionDuration, player.position);
+        thrown.Init(item.distractionDuration, player.position, _activePlayer);
     }
 
     private Vector3 GetMouseWorldPos()

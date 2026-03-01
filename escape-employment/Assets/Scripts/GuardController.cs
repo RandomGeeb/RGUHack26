@@ -17,6 +17,9 @@ public class GuardController : MonoBehaviour
     [SerializeField] private Material alertMaterial;
     [SerializeField] private Material distractedMaterial;
 
+    [Header("Room")]
+    [SerializeField] public int RoomId = 0;   // 0 = Room_1 (Player 0), 1 = Room_2 (Player 1)
+
     [Header("FOV Reference")]
     [SerializeField] private FieldOfView fov;
 

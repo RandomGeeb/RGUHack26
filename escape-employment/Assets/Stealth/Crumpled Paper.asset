@@ -16,6 +16,6 @@ MonoBehaviour:
   description: 
   icon: {fileID: 0}
   count: 4
-  type: 1
+  type: 0
   distractionDuration: 2.63
   throwDistance: 15
