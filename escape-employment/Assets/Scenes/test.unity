@@ -332,6 +332,8 @@ MonoBehaviour:
   bodyRenderer: {fileID: 134247081}
   patrolMaterial: {fileID: 0}
   alertMaterial: {fileID: 0}
+  distractedMaterial: {fileID: 0}
+  RoomId: 0
   fov: {fileID: 1760655970}
 --- !u!195 &134247085
 NavMeshAgent:
