@@ -166,6 +166,9 @@ public class ItemManager : MonoBehaviour
             UI.UpdateSelection(_selectedIndex);
 
         Debug.Log($"Player {_activePlayer} now has {newAmount} of {item.itemName}");
+
+        if (item.isKey)
+            KeyPickupPopup.Instance?.Show($"KEY OBTAINED");
     }
 
 
