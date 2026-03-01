@@ -24,16 +24,24 @@ public class GuardController : MonoBehaviour
     [SerializeField] private FieldOfView fov;
 
     private NavMeshAgent _agent;
+    private Animator _animator;
     private GuardState _state;
     private int _waypointIndex = 0;
     private float _waitTimer = 0f;
     private float _distractionTimer = 0f;
     private float _distractionDuration = 0f;
 
+    private static readonly int SpeedHash = Animator.StringToHash("Speed");
+
     private void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
         _agent.speed = patrolSpeed;
+        _agent.stoppingDistance = 0.1f;
+
+        _animator = GetComponentInChildren<Animator>();
+        if (_animator != null)
+            _animator.applyRootMotion = false;
     }
 
     private void Start()
@@ -52,6 +60,9 @@ public class GuardController : MonoBehaviour
     {
         if (_state == GuardState.Patrol) UpdatePatrol();
         if (_state == GuardState.Distracted) UpdateDistracted();
+
+        if (_animator != null)
+            _animator.SetFloat(SpeedHash, _agent.desiredVelocity.magnitude);
     }
 
     private void UpdatePatrol()
