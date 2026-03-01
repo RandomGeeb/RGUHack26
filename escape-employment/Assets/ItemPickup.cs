@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class ItemPickup : MonoBehaviour
 {
-    // This should match the index of the item in ItemManager.items
-    public int itemIndex;
+    public int itemIndex; // This matches the index in ItemManager.items
 
     private void OnMouseDown()
     {
